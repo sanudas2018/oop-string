@@ -65,14 +65,20 @@ $book2 = new Book("To Kill a Mockingbird", 3);
 // // Books shown before borrowing 
 
 /*
-echo "Available Copies of '{$book1->getTitle()}': {$book1->getAvailableCopies()}\n";
-echo "Available Copies of '{$book2->getTitle()}': {$book2->getAvailableCopies()}\n";
+echo "Book 1 - Name:  {$book1->getTitle()}, Available Copies : {$book1->getAvailableCopies()}\n";
+echo "Book 2 - Name:  {$book2->getTitle()}, Available Copies : {$book2->getAvailableCopies()}\n";
 */
 
 
 // // Create 2 members
 $member1 = new Member("John Doe");
 $member2 = new Member("Jane Smith");
+
+// 2 members Name:
+/*
+echo "Member 1 - Name:  {$member1->getName()}\n";
+echo "Member 2 - Name:  {$member2->getName()}\n";
+*/
 
 //  TODO: Apply Borrow book method to each member
 $member1->borrowBook($book1);
